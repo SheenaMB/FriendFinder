@@ -7,7 +7,6 @@ A simple compatability app, that based on the user's response will cross compare
 * General info
 * Technologies
 * Setup
-* Status
 
 #General Info
 -
