@@ -221,12 +221,12 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                    <h2 class="modal-title"><strong>This is your New Friend</strong></h2>
                 </div>
                 <div class="modal-body">
                     <h2 id="match-name"></h2>
                     <img id="match-img"
-                        src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3EvmOwOTOI1dYgZqyf3XNqOe9RFoGZ5KL3EkzjquY1ZOhOiOW" alt="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -237,7 +237,6 @@
     </div>
 
     <script type="text/javascript">
-
 
         // Get the form inputs
         $("#submit").on("click", function (event) {
@@ -280,16 +279,22 @@
                         $("#q10").val()
                     ]
                 };
-                // console.log(userData);/
+                console.log("-----userData:", userData)
+                
 
                 //convert just scores into an array
                 //create function totalDifference that
+                //sets user's input as array
+                //for loop for friendsArray
+            
                 //subtracts user 1 &  each friends in array's scores creating another array
                 // then adds those differences up.
                 //then smallest totalDifference is the "best match"
 
                 // AJAX post the data to the friends API.
                 $.post("/api/friends", userData, function (data) {
+                    console.log("--data--:", data)
+                    
                     $("#match-name").text(data.name);
                     $("#match-img").attr("src", data.photo);
 

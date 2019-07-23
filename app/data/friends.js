@@ -18,7 +18,7 @@ var friendsArray =
   },
   {
     "name":"Jenny",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?cs=srgb&dl=beautiful-blur-blurred-background-733872.jpg&fm=jpg",
     "scores":[
         1,
         5,
@@ -34,7 +34,7 @@ var friendsArray =
   },
   {
     "name":"Willa",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfwVpqmEtXaZ3y_iNQDvGCQmui-hs7FYfwP7wgypE46B5tMkwO",
     "scores":[
         5,
         1,
@@ -50,7 +50,7 @@ var friendsArray =
   },
   {
     "name":"Sarah",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://sph.washington.edu/sites/default/files/styles/large/public/profiles/Tran-Vy-alumni-300x400.jpg?itok=-Q5aVIpA",
     "scores":[
         1,
         2,
@@ -66,7 +66,7 @@ var friendsArray =
   },
   {
     "name":"Benny",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://s3.amazonaws.com/gazelle.cdn.yolocare.com/sites/429/2019/01/05131206/BHR-team-300x400-BlaineBurch.jpg",
     "scores":[
         4,
         5,
@@ -82,7 +82,7 @@ var friendsArray =
   },
   {
     "name":"Tyler",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://a57.foxnews.com/video.foxnews.com/thumbnails/041912/640/360/931/524/041912_ff_liu_640.jpg?ve=1&tl=1",
     "scores":[
         5,
         1,
@@ -98,7 +98,7 @@ var friendsArray =
   },
   {
     "name":"Becky",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Jessica_Ennis_%28May_2010%29_cropped.jpg/180px-Jessica_Ennis_%28May_2010%29_cropped.jpg",
     "scores":[
         2,
         5,
@@ -114,7 +114,7 @@ var friendsArray =
   },
   {
     "name":"Kevin",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://image.shutterstock.com/image-photo/portrait-happy-man-smiling-outdoors-260nw-562247020.jpg",
     "scores":[
         4,
         4,
@@ -130,7 +130,7 @@ var friendsArray =
   },
   {
     "name":"Tristen",
-    "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "photo":"https://www.maranausd.org/cms/lib/AZ02214357/Centricity/Domain/1001/Lauren__Arellano-2-300x400.jpg",
     "scores":[
         2,
         4,
