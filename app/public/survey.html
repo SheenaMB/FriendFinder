@@ -69,7 +69,8 @@
         </div>
 
         <h3><strong>Q3</strong></h3>
-        <h4>If your friend is sad about something, your first instinct is to support them emotionally, not try to solve their problem.</h4>
+        <h4>If your friend is sad about something, your first instinct is to support them emotionally, not try to solve
+            their problem.</h4>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <!-- <label class="input-group-text" for="inputGroupSelect01">Test 2</label> -->
@@ -116,7 +117,8 @@
         </div>
 
         <h3><strong>Q6</strong></h3>
-        <h4>If you have to temporarily put your plans on hold, you make sure it is your top priority to get back on track as soon as possible.</h4>
+        <h4>If you have to temporarily put your plans on hold, you make sure it is your top priority to get back on
+            track as soon as possible.</h4>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <!-- <label class="input-group-text" for="inputGroupSelect01">Test 2</label> -->
@@ -195,7 +197,7 @@
         </div>
         <br>
         <br>
-        
+
         <!-- Submit Button -->
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
                 aria-hidden="true"></i>
@@ -204,8 +206,7 @@
         <hr>
         <footer class="footer">
             <div class="container">
-                <p><a href="/api/friends">API Friends List</a> | <a
-                        href="#">GitHub Repo</a></p>
+                <p><a href="/api/friends">API Friends List</a> | <a href="#">GitHub Repo</a></p>
             </div>
         </footer>
 
@@ -236,7 +237,74 @@
     </div>
 
     <script type="text/javascript">
-        // Chosen CSS
+
+
+        // Get the form inputs
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            // // Form validation
+            // function validateForm() {
+            //     var isValid = true;
+            //     $(".form-control").each(function(){
+            //         if($(this).val() === ""){
+            //             isValid = false;
+            //         }
+            //     });
+
+            //     $(".custom-select").each(function () {
+
+            //         if ($(this).val() === "") {
+            //             isValid = false;
+            //         }
+            //     });
+            //     return isValid;
+            // }
+
+            // If everything is filled out 
+            // if (validateForm()) {
+            //     // User data
+            var userData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            };
+            console.log(userData);
+
+            //convert just scores into an array
+            //create function totalDifference that
+            //subtracts user 1 &  each friends in array's scores creating another array
+            // then adds those differences up.
+            //then smallest totalDifference is the "best match"
+
+            // AJAX post the data to the friends API.
+            $.post("/api/friends", userData, function (data) {
+                if (data) { }
+                else {
+                    alert("Please fill out all fields before submitting!");
+
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- // Chosen CSS
         // var config = {
         //     ".chosen-select": {},
         //     ".chosen-select-deselect": {
@@ -255,67 +323,4 @@
 
         // for (var selector in config) {
         //     $(selector).chosen(config[selector]);
-        // }
-
-        // Get the form inputs
-        $("#submit").on("click", function (event) {
-            event.preventDefault();
-
-            // // Form validation
-            // function validateForm() {
-            //     var isValid = true;
-            //     $(".form-control").each(function(){
-            //         if($(this).val() === ""){
-            //             isValid = false;
-            //         }
-            //     });
-            
-            //     $(".custom-select").each(function () {
-
-            //         if ($(this).val() === "") {
-            //             isValid = false;
-            //         }
-            //     });
-            //     return isValid;
-            // }
-
-            // If everything is filled out 
-            // if (validateForm()) {
-            //     // User data
-                var userData = {
-                    name: $("#name").val(),
-                    photo: $("#photo").val(),
-                    scores: [
-                        $("#q1").val(),
-                        $("#q2").val(),
-                        $("#q3").val(),
-                        $("#q4").val(),
-                        $("#q5").val(),
-                        $("#q6").val(),
-                        $("#q7").val(),
-                        $("#q8").val(),
-                        $("#q9").val(),
-                        $("#q10").val()
-                    ]
-                };
-
-                // AJAX post the data to the friends API.
-                $.post("/api/friends", userData, function (data) {
-
-                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                    // $("#match-name").text(data.name);
-                    // $("#match-img").attr("src", data.photo);
-
-                    // // Show the modal with the best match
-                    // $("#results-modal").modal("toggle");
-
-                });
-            } else {
-                alert("Please fill out all fields before submitting!");
-            }
-        });
-    </script>
-
-</body>
-
-</html>
+        // } -->
